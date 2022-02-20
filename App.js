@@ -3,6 +3,7 @@ import { StatusBar } from 'expo-status-bar'
 import { Alert, StyleSheet, Text, View } from 'react-native'
 import AppLoading from 'expo-app-loading'
 import { bootstrap } from './src/bootstrap'
+import { AppNav } from './src/nav/AppNav'
 
 
 export default function App() {
@@ -19,9 +20,6 @@ export default function App() {
   }
 
   return (
-    <View>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+   <AppNav />
   )
 }
